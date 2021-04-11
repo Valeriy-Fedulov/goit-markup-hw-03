@@ -212,6 +212,14 @@ h3 {
 }
 
 /* Портфолио фильтр */
+.portfolio {
+  margin: 94px 0;
+}
+
+.port-nav {
+  margin-bottom: 34px;
+}
+
 .port-btn {
   font-family: var(--main-family);
   font-weight: 500;
@@ -234,10 +242,20 @@ h3 {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+
+  margin-bottom: 4px;
 }
 
 .serv-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
+}
+
+.port-list {
+  margin-bottom: 20px;
+}
+
+.port li {
+  padding-bottom: 20px;
 }
