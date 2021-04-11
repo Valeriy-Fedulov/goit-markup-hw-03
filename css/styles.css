@@ -1,0 +1,174 @@
+:root {
+  --main-color: #2196f3;
+  --main-family: Roboto, sans-serif;
+  --main-text-color: #757575;
+  --title-color: #212121;
+  --blacklogo-color: #000;
+  --white-title-color: #fff;
+}
+
+/* Общий стиль */
+.page {
+  font-family: var(--main-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Логотип */
+.logo,
+.logo:focus {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--blacklogo-color);
+}
+
+.logo-web {
+  color: var(--main-color);
+}
+
+/* Навигация */
+.site-nav {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.activ-menu {
+  color: var(--main-color);
+}
+
+.site-nav:hover,
+.site-nav:focus {
+  color: var(--main-color);
+}
+
+.conect-nav {
+  color: var(--main-text-color);
+}
+
+/* Баннер */
+.banner {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-title-color);
+  /* Временный фон */
+  background-color: #2f303a;
+}
+
+.main-btn {
+  font-family: var(--main-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-title-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.activ-btn:hover,
+.activ-btn:focus {
+  color: var(--white-title-color);
+  background: var(--main-color);
+}
+
+/* Особенности */
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+/* Чем мы занимаемся */
+.sect {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+}
+
+/* Наша команда */
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-color);
+}
+
+.team-prof {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-text-color);
+}
+
+/* Адрес */
+.foot-logo,
+.foot-logo:focus {
+  color: var(--white-title-color);
+}
+
+.mail-tel {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-tel:hover,
+:focus {
+  color: var(--main-color);
+}
+
+.adr {
+  background-color: #2f303a;
+}
+
+.foot-adr {
+  font-style: normal;
+  color: var(--white-title-color);
+}
+
+/* Портфолио фильтр */
+.port-btn {
+  font-family: var(--main-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+
+.port-btn:hover,
+.port-btn:focus {
+  color: var(--white-title-color);
+  background: var(--main-color);
+}
+
+/* Портфолио услуги*/
+.services {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.serv-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-color);
+}
