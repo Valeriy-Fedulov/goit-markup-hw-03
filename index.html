@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -43,7 +49,7 @@
     </header>
     <main>
       <!-- Баннер -->
-      <section>
+      <section class="section hero">
         <h1 class="banner">
           Эффективные решения <br />
           для вашего бизнеса
@@ -53,7 +59,7 @@
         </button>
       </section>
       <!-- Особенности -->
-      <section>
+      <section class="section">
         <h2>Особенности</h2>
         <ul class="list">
           <li>
@@ -87,7 +93,7 @@
         </ul>
       </section>
       <!-- Чем мы занимаемся -->
-      <section>
+      <section class="section">
         <h2 class="sect">Чем мы занимаемся</h2>
         <ul class="list">
           <li>
@@ -120,12 +126,13 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section>
-        <h2 class="sect">Наша команда</h2>
+      <section class="section">
+        <h2 class="sect sect-title">Наша команда</h2>
         <ul class="list">
-          <li>
+          <li class="sect-list">
             <a class="list" href=""
               ><img
+                class="item"
                 src="./images/team-card1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
@@ -134,9 +141,10 @@
               <p class="team-prof" lang="en">Product Designer</p>
             </a>
           </li>
-          <li>
+          <li class="sect-list">
             <a class="list" href=""
               ><img
+                class="item"
                 src="./images/team-card2.jpg"
                 alt="Ольга Репина"
                 width="270"
@@ -145,9 +153,10 @@
               <p class="team-prof" lang="en">Frontend Developer</p>
             </a>
           </li>
-          <li>
+          <li class="sect-list">
             <a class="list" href=""
               ><img
+                class="item"
                 src="./images/team-card3.jpg"
                 alt="Николай Тарасов"
                 width="270"
@@ -156,9 +165,10 @@
               <p class="team-prof" lang="en">Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="sect-list">
             <a class="list" href=""
               ><img
+                class="item"
                 src="./images/team-card4.jpg"
                 alt="Михаил Ермаков"
                 width="270"
@@ -177,14 +187,15 @@
         <a class="logo foot-logo list" href="./index.html"
           ><span class="logo-web">Web</span>Studio</a
         >
-        <address>
+        <address class="contact">
           <p class="foot-adr">г. Киев, пр-т Леси Украинки, 26</p>
-          <a class="mail-tel list" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          ><br />
-          <a class="mail-tel list" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <ul class="list">
+          <li class="email">
+            <a class="mail-tel list" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          <li>
+            <a class="mail-tel list" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </address>
       </section>
     </footer>

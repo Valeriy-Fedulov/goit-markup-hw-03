@@ -7,6 +7,19 @@
   --white-title-color: #fff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Общий стиль */
 .page {
   font-family: var(--main-family);
@@ -15,11 +28,28 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  margin-bottom: 94px;
 }
 
 .list {
   list-style: none;
   text-decoration: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.list p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Логотип */
@@ -42,6 +72,8 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+
+  margin-top: 0;
 }
 
 .activ-menu {
@@ -58,16 +90,22 @@
 }
 
 /* Баннер */
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
+}
+
 .banner {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-title-color);
-  /* Временный фон */
-  background-color: #2f303a;
+  margin-bottom: 30px;
 }
 
 .main-btn {
@@ -93,6 +131,8 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+
+  margin-bottom: 10px;
 }
 
 /* Чем мы занимаемся */
@@ -101,14 +141,30 @@
   line-height: 1.17;
   text-align: center;
   color: var(--title-color);
+
+  margin-bottom: 50px;
 }
 
 /* Наша команда */
+.sect-title {
+  padding-top: 94px;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
 .team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-color);
+
+  margin-bottom: 10px;
+}
+
+.sect-list {
+  padding-bottom: 30px;
 }
 
 .team-prof {
@@ -123,6 +179,10 @@
   color: var(--white-title-color);
 }
 
+.contact {
+  margin-top: 20px;
+}
+
 .mail-tel {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -135,11 +195,20 @@
 
 .adr {
   background-color: #2f303a;
+
+  padding: 30px 0;
 }
 
 .foot-adr {
   font-style: normal;
   color: var(--white-title-color);
+
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.email {
+  margin-bottom: 9px;
 }
 
 /* Портфолио фильтр */
