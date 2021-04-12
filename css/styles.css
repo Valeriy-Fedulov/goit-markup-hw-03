@@ -237,7 +237,8 @@ a.mail {
 
 /* Портфолио фильтр */
 .portfolio {
-  margin: 94px 0;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .port-nav {
@@ -270,13 +271,15 @@ a.mail {
   letter-spacing: 0.06em;
   color: var(--title-color);
 
-  margin-bottom: 4px;
+  margin: 0 24px 4px;
 }
 
 .serv-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .port-list {
