@@ -7,10 +7,14 @@
   --white-title-color: #fff;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 h1,
@@ -18,6 +22,18 @@ h2,
 h3 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-none {
+  display: none;
 }
 
 /* Общий стиль */
@@ -28,11 +44,6 @@ h3 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .section {
   margin-bottom: 94px;
@@ -42,8 +53,7 @@ h3 {
   list-style: none;
   text-decoration: none;
 
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -60,6 +70,8 @@ h3 {
   font-size: 26px;
   line-height: 1.19;
   color: var(--blacklogo-color);
+
+  display: inline-block;
 }
 
 .logo-web {
@@ -109,6 +121,9 @@ h3 {
 }
 
 .main-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
   font-family: var(--main-family);
   font-weight: 700;
   font-size: 16px;
@@ -144,10 +159,15 @@ h3 {
 
   margin-bottom: 50px;
 }
+.sect-img img {
+  display: block;
+}
 
 /* Наша команда */
-.sect-title {
+.command {
+  background-color: #f5f4fa;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .item {
@@ -177,26 +197,34 @@ h3 {
 .foot-logo,
 .foot-logo:focus {
   color: var(--white-title-color);
+
+  margin-bottom: 20px;
 }
 
-.contact {
-  margin-top: 20px;
-}
-
-.mail-tel {
+.mail,
+.tel {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+
+  display: inline-block;
 }
 
-.mail-tel:hover,
-:focus {
+.mail:hover,
+.tel:hover,
+.mail:focus,
+.tel:focus {
   color: var(--main-color);
+}
+
+a.mail {
+  margin-bottom: 9px;
 }
 
 .adr {
   background-color: #2f303a;
 
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .foot-adr {
@@ -204,10 +232,6 @@ h3 {
   color: var(--white-title-color);
 
   margin-top: 0;
-  margin-bottom: 9px;
-}
-
-.email {
   margin-bottom: 9px;
 }
 
@@ -221,6 +245,9 @@ h3 {
 }
 
 .port-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
   font-family: var(--main-family);
   font-weight: 500;
   font-size: 16px;
