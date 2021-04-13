@@ -45,9 +45,6 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.section {
-  margin-bottom: 94px;
-}
 
 .list {
   margin: 0;
@@ -60,6 +57,11 @@ h3 {
 .list p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Логотип */
@@ -78,8 +80,12 @@ h3 {
   color: var(--main-color);
 }
 
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Навигация */
-.flex-container {
+.flex-cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +140,6 @@ h3 {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 
   background-color: #2f303a;
   text-align: center;
@@ -193,6 +198,9 @@ h3 {
 }
 
 /* Чем мы занимаемся */
+.work {
+  padding-bottom: 94px;
+}
 .sect {
   margin-bottom: 50px;
 
@@ -298,11 +306,6 @@ a.mail {
   margin-right: 8px;
 }
 
-.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-
 .port-nav {
   margin-bottom: 34px;
 }
@@ -329,8 +332,17 @@ a.mail {
 }
 
 /* Портфолио услуги*/
+.portf-cont {
+  margin: -15px;
+}
+
+.port-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .services {
-  margin: 0 24px 4px;
+  margin-bottom: 4px;
 
   font-size: 18px;
   line-height: 2;
@@ -339,18 +351,25 @@ a.mail {
 }
 
 .serv-text {
-  margin-left: 24px;
-  margin-right: 24px;
-
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
 }
 
 .port-list {
-  margin-bottom: 20px;
+  display: block;
 }
 
-.port li {
+.port .item {
+  width: 370px;
+  margin: 15px;
   padding-bottom: 20px;
+}
+
+.line-portf {
+  padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
