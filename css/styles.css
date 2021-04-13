@@ -201,6 +201,11 @@ h3 {
   text-align: center;
   color: var(--title-color);
 }
+.sect-img {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sect-img img {
   display: block;
 }
