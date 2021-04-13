@@ -287,7 +287,17 @@ a.mail {
   color: var(--white-title-color);
 }
 
+/* -------------------------------------------------------------- */
 /* Портфолио фильтр */
+.port-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.port-flex .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio {
   margin-top: 94px;
   margin-bottom: 94px;
