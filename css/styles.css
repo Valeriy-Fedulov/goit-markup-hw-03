@@ -50,11 +50,11 @@ h3 {
 }
 
 .list {
-  list-style: none;
-  text-decoration: none;
-
   margin: 0;
   padding: 0;
+
+  list-style: none;
+  text-decoration: none;
 }
 
 .list p {
@@ -65,13 +65,13 @@ h3 {
 /* Логотип */
 .logo,
 .logo:focus {
+  display: inline-block;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--blacklogo-color);
-
-  display: inline-block;
 }
 
 .logo-web {
@@ -79,13 +79,34 @@ h3 {
 }
 
 /* Навигация */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+}
+
+.flex-nav-item {
+  display: flex;
+  margin-left: 93px;
+}
+
+.flex-nav-item .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
-
-  margin-top: 0;
 }
 
 .activ-menu {
@@ -97,33 +118,44 @@ h3 {
   color: var(--main-color);
 }
 
+.flex-connect {
+  display: flex;
+}
+
+.flex-connect .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .conect-nav {
   color: var(--main-text-color);
 }
 
 /* Баннер */
 .hero {
-  background-color: #2f303a;
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 94px;
+
+  background-color: #2f303a;
+  text-align: center;
 }
 
 .banner {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-title-color);
-  margin-bottom: 30px;
 }
 
 .main-btn {
   padding: 10px 32px;
   border-radius: 4px;
   border: none;
+
   font-family: var(--main-family);
   font-weight: 700;
   font-size: 16px;
@@ -131,6 +163,7 @@ h3 {
   letter-spacing: 0.06em;
   color: var(--white-title-color);
   background-color: var(--main-color);
+
   cursor: pointer;
 }
 
@@ -142,22 +175,22 @@ h3 {
 
 /* Особенности */
 .features-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
-
-  margin-bottom: 10px;
 }
 
 /* Чем мы занимаемся */
 .sect {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-color);
-
-  margin-bottom: 50px;
 }
 .sect-img img {
   display: block;
@@ -170,17 +203,17 @@ h3 {
   padding-bottom: 94px;
 }
 
-.item {
+.sect-list .item {
   margin-bottom: 10px;
 }
 
 .team {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-color);
-
-  margin-bottom: 10px;
 }
 
 .sect-list {
@@ -196,17 +229,17 @@ h3 {
 /* Адрес */
 .foot-logo,
 .foot-logo:focus {
-  color: var(--white-title-color);
-
   margin-bottom: 20px;
+
+  color: var(--white-title-color);
 }
 
 .mail,
 .tel {
+  display: inline-block;
+
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-
-  display: inline-block;
 }
 
 .mail:hover,
@@ -221,18 +254,18 @@ a.mail {
 }
 
 .adr {
-  background-color: #2f303a;
-
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: #2f303a;
 }
 
 .foot-adr {
-  font-style: normal;
-  color: var(--white-title-color);
-
   margin-top: 0;
   margin-bottom: 9px;
+
+  font-style: normal;
+  color: var(--white-title-color);
 }
 
 /* Портфолио фильтр */
@@ -249,12 +282,14 @@ a.mail {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
+
   font-family: var(--main-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--title-color);
   background-color: #f5f4fa;
+
   cursor: pointer;
 }
 
@@ -266,20 +301,21 @@ a.mail {
 
 /* Портфолио услуги*/
 .services {
+  margin: 0 24px 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-
-  margin: 0 24px 4px;
 }
 
 .serv-text {
+  margin-left: 24px;
+  margin-right: 24px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .port-list {
